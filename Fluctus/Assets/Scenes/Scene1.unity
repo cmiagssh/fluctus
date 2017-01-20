@@ -133,7 +133,7 @@ Prefab:
     - target: {fileID: 114281195627699842, guid: 9b2873645e1151e468442f0a4f18c0e7,
         type: 2}
       propertyPath: waveStartRadius
-      value: 1.5
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9b2873645e1151e468442f0a4f18c0e7, type: 2}
@@ -354,7 +354,7 @@ Prefab:
     - target: {fileID: 114281195627699842, guid: 9b2873645e1151e468442f0a4f18c0e7,
         type: 2}
       propertyPath: waveStartRadius
-      value: 1.5
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9b2873645e1151e468442f0a4f18c0e7, type: 2}

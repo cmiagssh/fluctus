@@ -15,11 +15,15 @@ public class WaveCollisionScript : MonoBehaviour
     {
         circleCollider = GetComponent<CircleCollider2D>();
 
-        circleCollider.radius = waveStartRadius;
+        circleCollider.radius = 0f;
     }
 
     void FixedUpdate()
     {
+        if (circleCollider.radius <= 0.2f) {
+            circleCollider.radius = waveStartRadius;
+        }
+
         circleCollider.radius += this.grothRatio;
 
         if (circleCollider.radius > deleteWhenBiggerThan)
