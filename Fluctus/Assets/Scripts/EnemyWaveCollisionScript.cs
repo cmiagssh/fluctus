@@ -4,18 +4,43 @@ using UnityEngine;
 
 public class EnemyWaveCollisionScript : MonoBehaviour
 {
-    void OnCollisionEnter2D(Collision2D coll)
-    {
-        Debug.Log(coll.collider.gameObject);
+    int nrColliders = 0;
 
-        if (coll.collider.gameObject.tag == "WaveInnerCollider")
+    void Start()
+    {
+
+    }
+
+    void OnTriggerEnter2D(Collider2D coll)
+    {
+        if (coll.gameObject.tag == "WaveInnerCollider")
         {
-            Debug.Log("Enter Inner Collision");
+            nrColliders--;
         }
 
-        if (coll.collider.gameObject.tag == "WaveOuterCollider")
+        if (coll.gameObject.tag == "WaveOuterCollider")
         {
-            Debug.Log("Enter Outer Collision");
+            nrColliders++;
+        }
+    }
+
+    void OnTriggerExit2D(Collider2D coll)
+    {
+        if (coll.gameObject.tag == "WaveOuterCollider")
+        {
+            nrColliders--;
+        }
+
+        if (coll.gameObject.tag == "WaveInnerCollider")
+        {
+            nrColliders++;
+        }
+    }
+
+    void FixedUpdate()
+    {
+        if (nrColliders >= 2) {
+            Destroy(gameObject);
         }
     }
 }
