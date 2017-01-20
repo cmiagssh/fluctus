@@ -1,7 +1,7 @@
-﻿
-Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2015
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fluctus", "Fluctus.csproj", "{F5F68E58-C65E-2E13-D262-47737EA2D5E4}"
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2008
+
+Project("{D661A068-F208-BF23-7ACA-61099C07D7AE}") = "Fluctus", "Assembly-CSharp.csproj", "{026BF075-A2E2-FEB4-EAAC-8D73F4D16C53}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,12 +9,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{F5F68E58-C65E-2E13-D262-47737EA2D5E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F5F68E58-C65E-2E13-D262-47737EA2D5E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F5F68E58-C65E-2E13-D262-47737EA2D5E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F5F68E58-C65E-2E13-D262-47737EA2D5E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{026BF075-A2E2-FEB4-EAAC-8D73F4D16C53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{026BF075-A2E2-FEB4-EAAC-8D73F4D16C53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{026BF075-A2E2-FEB4-EAAC-8D73F4D16C53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{026BF075-A2E2-FEB4-EAAC-8D73F4D16C53}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
 	EndGlobalSection
 EndGlobal
