@@ -170,7 +170,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radius: 0
   width: 1
-  growthRatio: 0.1
+  growthRatio: 0.01
   playerGameobject: {fileID: 0}
 --- !u!120 &120383624025229162
 LineRenderer:
