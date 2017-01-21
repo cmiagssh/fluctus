@@ -51,7 +51,7 @@ public class Enemy2MovementScript : MonoBehaviour {
 
     void RotateEnemy()
     {
-        transform.forward = 
+        //transform.forward = 
 
         /*
         //find the vector pointing from our position to the target
