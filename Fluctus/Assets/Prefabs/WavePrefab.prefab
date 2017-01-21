@@ -67,7 +67,7 @@ LineRenderer:
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0afe02ff9aed2f84cb9ded931c339841, type: 2}
+  - {fileID: 2100000, guid: 7d9cfd98928d08c489c89ddb312b3746, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

@@ -161,7 +161,7 @@ MonoBehaviour:
   fireInput: P1Fire
   thrust: 0
   angularDrag: 0
-  linearDrag: 0.7
+  linearDrag: 2
   rollForce: 300
   thrustForce: 15
 --- !u!212 &1062661628
@@ -369,7 +369,7 @@ MonoBehaviour:
   fireInput: P2Fire
   thrust: 0
   angularDrag: 0
-  linearDrag: 0.7
+  linearDrag: 4
   rollForce: 300
   thrustForce: 15
 --- !u!212 &1900015085
