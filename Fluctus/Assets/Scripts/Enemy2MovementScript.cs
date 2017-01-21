@@ -3,7 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Enemy2MovementScript : MonoBehaviour {
-    GameObject closestPlayer;
+    public GameObject closestPlayer;
+
+    public float speed = 1000000000000.0f;
+
+    public Transform Target;
+
+    //values for internal use
+    private Quaternion _lookRotation;
+    private Vector3 _direction;
 
     void FixedUpdate()
     {
@@ -31,12 +39,21 @@ public class Enemy2MovementScript : MonoBehaviour {
             closestPlayer = player2;
         }
 
-        Debug.Log(closestPlayer);
+        Target = closestPlayer.transform;
     }
 
     void RotateEnemy()
     {
-        transform.rotation = Quaternion.Euler(0, 0, Mathf.Sin(Time.realtimeSinceStartup) * 40);
+        //find the vector pointing from our position to the target
+        _direction = (Target.position - transform.position).normalized;
+
+        //create the rotation we need to be in to look at the target
+        _lookRotation = Quaternion.LookRotation(_direction);
+
+        //rotate us over time according to speed until we are in the required rotation
+        transform.rotation = Quaternion.Slerp(transform.rotation, _lookRotation, Time.deltaTime);
+
+        transform.eulerAngles = new Vector3(0, 0, transform.eulerAngles.z);
     }
 
     void MoveEnemy()
@@ -52,4 +69,3 @@ public class Enemy2MovementScript : MonoBehaviour {
         }
     }
 }
-
