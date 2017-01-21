@@ -6,20 +6,25 @@ Obj/
 UnityGenerated/
 Library/
 Assets/AssetStoreTools*
+Build/
 
 # ===================================== #
 # Visual Studio / MonoDevelop generated #
 # ===================================== #
 ExportedObj/
+*.tmp
 *.svd
 *.userprefs
 *.csproj
 *.pidb
+*.pidb.meta
 *.suo
 *.sln
 *.user
 *.unityproj
 *.booproj
+
+sysinfo.txt
 
 # ============ #
 # OS generated #
