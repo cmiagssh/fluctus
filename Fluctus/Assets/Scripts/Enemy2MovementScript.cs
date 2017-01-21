@@ -10,8 +10,15 @@ public class Enemy2MovementScript : MonoBehaviour {
     public Transform Target;
 
     //values for internal use
-    private Quaternion _lookRotation;
-    private Vector3 _direction;
+    private Quaternion targetRotation;
+    private Vector2 lookDirection;
+    private float atan2;
+    private Rigidbody2D rigidBody;
+
+    void Start()
+    {
+        rigidBody = transform.GetComponent<Rigidbody2D>();
+    }
 
     void FixedUpdate()
     {
@@ -44,21 +51,26 @@ public class Enemy2MovementScript : MonoBehaviour {
 
     void RotateEnemy()
     {
+        transform.forward = 
+
+        /*
         //find the vector pointing from our position to the target
-        _direction = (Target.position - transform.position).normalized;
-
-        //create the rotation we need to be in to look at the target
-        _lookRotation = Quaternion.LookRotation(_direction);
-
+        lookDirection = (new Vector2(Target.position.x, Target.position.y) - new Vector2(transform.position.x, transform.position.x));
+        //calculate rotation using inverse tanget function
+        atan2 = Mathf.Atan2(lookDirection.y, lookDirection.x);
         //rotate us over time according to speed until we are in the required rotation
-        transform.rotation = Quaternion.Slerp(transform.rotation, _lookRotation, Time.deltaTime);
+        targetRotation = Quaternion.Euler(0f,0f,atan2 * Mathf.Rad2Deg); //perfect rotation facing nearest player
+        //transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime);
+        transform.rotation = targetRotation;
+        */
 
-        transform.eulerAngles = new Vector3(0, 0, transform.eulerAngles.z);
     }
 
     void MoveEnemy()
     {
-        transform.position += transform.right * Time.deltaTime;
+        Debug.Log(transform.position.ToString() + " " + transform.right.ToString());
+        rigidBody.MovePosition(transform.position + transform.right * speed);
+        
     }
 
     void DestroyEnemy()
