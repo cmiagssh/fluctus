@@ -29,7 +29,7 @@ public class DrawCircle : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
     {
-        radius += 0.1f;
+        radius += 0.01f;
         drawCircle();
         if (frameCount > 1)
         {
