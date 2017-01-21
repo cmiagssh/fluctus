@@ -20,10 +20,10 @@ public class WaveCollisionScript : MonoBehaviour
 
         if (transform.tag == "WaveInnerCollider")
         {
-            widthOffset = -(transform.parent.GetComponent<DrawCircle>().width / 2);
+            widthOffset = -(transform.parent.GetComponent<WaveScript>().width / 2);
         } else if (transform.tag == "WaveOuterCollider")
         {
-            widthOffset = transform.parent.GetComponent<DrawCircle>().width / 2;
+            widthOffset = transform.parent.GetComponent<WaveScript>().width / 2;
         }
     }
 
@@ -35,14 +35,14 @@ public class WaveCollisionScript : MonoBehaviour
         {
             if (transform.tag == "WaveInnerCollider")
             {
-                widthOffset = -(transform.parent.GetComponent<DrawCircle>().width / 2);
+                widthOffset = -(transform.parent.GetComponent<WaveScript>().width / 2);
             }
             else if (transform.tag == "WaveOuterCollider")
             {
-                widthOffset = transform.parent.GetComponent<DrawCircle>().width / 2;
+                widthOffset = transform.parent.GetComponent<WaveScript>().width / 2;
             }
 
-            circleCollider.radius = transform.parent.GetComponent<DrawCircle>().radius + widthOffset + offset;
+            circleCollider.radius = transform.parent.GetComponent<WaveScript>().radius + widthOffset + offset;
         }
     }
 }

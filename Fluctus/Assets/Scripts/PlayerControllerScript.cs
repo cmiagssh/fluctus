@@ -46,6 +46,7 @@ public class PlayerControllerScript : MonoBehaviour {
         if (Input.GetButtonDown(fireInput))
         {
             newWavePrefab = Instantiate(wavePrefab, gameObject.transform.position, gameObject.transform.rotation) as GameObject;
+            newWavePrefab.GetComponent<WaveScript>().playerGameobject = gameObject;
         }
     }
 }

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DrawCircle : MonoBehaviour {
+public class WaveScript : MonoBehaviour {
 
     private LineRenderer lineRenderer;
     private int circleSegments = 64;
@@ -11,6 +11,8 @@ public class DrawCircle : MonoBehaviour {
 
     public float radius = 5;
     public float width = 1;
+    public float growthRatio = 1;
+    public GameObject playerGameobject;
     
 	// Use this for initialization
 	void Start ()
@@ -29,7 +31,7 @@ public class DrawCircle : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
     {
-        radius += 0.01f;
+        radius += growthRatio;
         drawCircle();
         if (frameCount > 1)
         {
