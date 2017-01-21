@@ -2,45 +2,32 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyWaveCollisionScript : MonoBehaviour
-{
-    int nrColliders = 0;
+public class EnemyWaveCollisionScript : MonoBehaviour {
+    GameObject[] waves;
 
-    void Start()
-    {
-
+    // Use this for initialization
+    void Start () {
+        waves = GameObject.FindGameObjectsWithTag("Wave");
+        Debug.Log("adsf");
     }
+	
+	// Update is called once per frame
+	void Update () {
+		
+	}
 
-    void OnTriggerEnter2D(Collider2D coll)
+    void OnCollisionEnter2D(Collision2D coll)
     {
+        Debug.Log(coll.gameObject.tag);
+
         if (coll.gameObject.tag == "WaveInnerCollider")
         {
-            nrColliders--;
+            Debug.Log("Enter Inner Collision");
         }
 
         if (coll.gameObject.tag == "WaveOuterCollider")
         {
-            nrColliders++;
-        }
-    }
-
-    void OnTriggerExit2D(Collider2D coll)
-    {
-        if (coll.gameObject.tag == "WaveOuterCollider")
-        {
-            nrColliders--;
-        }
-
-        if (coll.gameObject.tag == "WaveInnerCollider")
-        {
-            nrColliders++;
-        }
-    }
-
-    void FixedUpdate()
-    {
-        if (nrColliders >= 2) {
-            Destroy(gameObject);
+            Debug.Log("Enter Outer Collision");
         }
     }
 }
