@@ -22,7 +22,12 @@ public class PlayerSelectControllerScript : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        playerPick = playerPickInfoObject.GetComponent<ShipPickInfoScript>();		
+        playerPick = playerPickInfoObject.GetComponent<ShipPickInfoScript>();
+        GameObject[] musicArray = GameObject.FindGameObjectsWithTag("Music");
+        foreach (GameObject music in musicArray)
+        {
+            Destroy(music);
+        }	
 	}
 	
 	// Update is called once per frame
@@ -36,7 +41,7 @@ public class PlayerSelectControllerScript : MonoBehaviour {
 			p1ShipIndex = p1ShipIndex % p1Ships.Length;
 			p1Ships[p1ShipIndex].SetActive (true);
 		}
-		if (Input.GetAxis ("P1Roll") == -1 && p1WasReset)
+		if (Input.GetAxis ("P1Roll") == -1 && p1WasReset && !p1Ready)
 		{
 			p1WasReset = !p1WasReset;
 			p1Ships [p1ShipIndex].SetActive (false);
@@ -56,7 +61,7 @@ public class PlayerSelectControllerScript : MonoBehaviour {
 			p2ShipIndex = p2ShipIndex % p2Ships.Length;
 			p2Ships[p2ShipIndex].SetActive (true);
 		}
-		if (Input.GetAxis ("P2Roll") == -1 && p2WasReset)
+		if (Input.GetAxis ("P2Roll") == -1 && p2WasReset && !p2Ready)
 		{
 			p2WasReset = !p2WasReset;
 			p2Ships [p2ShipIndex].SetActive (false);
@@ -82,5 +87,16 @@ public class PlayerSelectControllerScript : MonoBehaviour {
             //Neues Level kann hier geladen werden. Info des gepickten ships muss noch gespeichert werden -> siehe Dont destroy on load :)
             Application.LoadLevel(1);
 		}
-	}
+        if (Input.GetButtonDown("P1ButtonB") && p1Ready)
+        {
+            p1IsReady.SetActive(false);
+            p1Ready = false;
+        }
+        if (Input.GetButtonDown("P2ButtonB") && p2Ready)
+        {
+            p2IsReady.SetActive(false);
+            p2Ready = false;
+        }
+
+    }
 }

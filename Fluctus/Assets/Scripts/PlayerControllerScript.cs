@@ -19,6 +19,8 @@ public class PlayerControllerScript : MonoBehaviour {
     public float thrustForce;
     public float pulseWidth;
 
+    float lastShooted = 0f;
+
     public string playerColour;
 
 	// Use this for initialization
@@ -45,10 +47,10 @@ public class PlayerControllerScript : MonoBehaviour {
 
         //torque
 
-
-
-        if (Input.GetButtonDown(fireInput))
+        if (Input.GetButtonDown(fireInput) && (Time.realtimeSinceStartup - lastShooted > 0.8f))
         {
+            lastShooted = Time.realtimeSinceStartup;
+
             newWavePrefab = Instantiate(wavePrefab, gameObject.transform.position, gameObject.transform.rotation) as GameObject;
             newWavePrefab.GetComponent<WaveScript>().playerGameobject = gameObject;
             newWavePrefab.GetComponent<WaveScript>().width = pulseWidth;

@@ -5,9 +5,13 @@ using UnityEngine;
 public class EnemyWaveCollisionScript : MonoBehaviour
 {
     int nrColliders = 0;
+    private Animator animator;
+    private AudioSource audioSource;
 
     void Start()
     {
+        animator = gameObject.GetComponentInChildren<Animator>();
+        audioSource = gameObject.GetComponent<AudioSource>();
 
     }
 
@@ -40,7 +44,9 @@ public class EnemyWaveCollisionScript : MonoBehaviour
     void FixedUpdate()
     {
         if (nrColliders >= 2) {
-            Destroy(gameObject);
+            animator.SetBool("Alive", false);
+            audioSource.Play();
+            Destroy(gameObject, 5/8f);
         }
     }
 }

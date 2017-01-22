@@ -12,6 +12,9 @@ TagManager:
   - Player2
   - Arena
   - Info
+  - ShipPath
+  - ShipPath2
+  - Music
   layers:
   - Default
   - TransparentFX

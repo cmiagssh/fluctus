@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Enemy1MovementScript : MonoBehaviour {
+    private bool direction = true;
+
 	void FixedUpdate () {
         RotatePlayer();
         MovePlayer();
-        DestroyPlayer();
 	}
 
     void RotatePlayer() {
@@ -14,12 +15,22 @@ public class Enemy1MovementScript : MonoBehaviour {
     }
 
     void MovePlayer() {
-        transform.position += transform.right * Time.deltaTime;
-    }
+        if (direction)
+        {
+            transform.position += transform.right * Time.deltaTime;
+        } else
+        {
+            transform.position -= transform.right * Time.deltaTime;
+        }
 
-    void DestroyPlayer() {
-        if (transform.position.x > 10.0f) {
-            Destroy(gameObject);
+        if (gameObject.transform.position.x > 23)
+        {
+            direction = false;
+        }
+
+        if (gameObject.transform.position.x < 8)
+        {
+            direction = true;
         }
     }
 }
