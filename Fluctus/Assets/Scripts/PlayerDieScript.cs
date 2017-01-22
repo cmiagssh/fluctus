@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerDieScript : MonoBehaviour {
     private Animator animator;
+    public GameObject deathScreen;
 
     void Start ()
     {
@@ -30,5 +31,7 @@ public class PlayerDieScript : MonoBehaviour {
     {
         animator.SetBool("Alive", false);
         Destroy(gameObject, (5 / 10f));
+        deathScreen.SetActive (true);
+      
     }
 }

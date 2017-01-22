@@ -7,6 +7,8 @@ public class PlayerSelectControllerScript : MonoBehaviour {
 	public GameObject[] p2Ships;
 	public GameObject p1IsReady;
 	public GameObject p2IsReady;
+    public GameObject playerPickInfoObject;
+    private ShipPickInfoScript playerPick;
 
 	private bool p1WasReset = true;
 	private bool p2WasReset = true;
@@ -20,7 +22,7 @@ public class PlayerSelectControllerScript : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		
+        playerPick = playerPickInfoObject.GetComponent<ShipPickInfoScript>();		
 	}
 	
 	// Update is called once per frame
@@ -69,14 +71,16 @@ public class PlayerSelectControllerScript : MonoBehaviour {
 		if (Input.GetButtonDown ("P1Fire")) {
 			p1Ready = true;
 			p1IsReady.SetActive (true);
-
+            playerPick.p1Pick = p1ShipIndex;
 		}
 		if (Input.GetButtonDown ("P2Fire")) {
 			p2Ready = true;
 			p2IsReady.SetActive (true);
-		}
+            playerPick.p2Pick = p2ShipIndex;
+        }
 		if (p1Ready == true && p2Ready == true){
-			//Neues Level kann hier geladen werden. Info des gepickten ships muss noch gespeichert werden -> siehe Dont destroy on load :)
+            //Neues Level kann hier geladen werden. Info des gepickten ships muss noch gespeichert werden -> siehe Dont destroy on load :)
+            Application.LoadLevel(1);
 		}
 	}
 }

@@ -17,6 +17,7 @@ public class PlayerControllerScript : MonoBehaviour {
     public float linearDrag;
     public float rollForce;
     public float thrustForce;
+    public float pulseWidth;
 
     public string playerColour;
 
@@ -50,6 +51,7 @@ public class PlayerControllerScript : MonoBehaviour {
         {
             newWavePrefab = Instantiate(wavePrefab, gameObject.transform.position, gameObject.transform.rotation) as GameObject;
             newWavePrefab.GetComponent<WaveScript>().playerGameobject = gameObject;
+            newWavePrefab.GetComponent<WaveScript>().width = pulseWidth;
         }
     }
 }
