@@ -12,11 +12,13 @@ public class PlayerControllerScript : MonoBehaviour {
     public string thrustInput;
     public string fireInput;
     public float thrust;
-
+    public float mass;
     public float angularDrag;
     public float linearDrag;
     public float rollForce;
     public float thrustForce;
+
+    public string playerColour;
 
 	// Use this for initialization
 	void Start () {
@@ -24,6 +26,7 @@ public class PlayerControllerScript : MonoBehaviour {
         rigidBody = GetComponent<Rigidbody2D>();
         rigidBody.angularDrag = angularDrag;
         rigidBody.drag = linearDrag;
+        rigidBody.mass = mass;
 		
 	}
 
@@ -37,7 +40,7 @@ public class PlayerControllerScript : MonoBehaviour {
 
         //thust
         rigidBody.AddForce(transform.up * thrust * thrustForce);
-        rigidBody.angularVelocity = -(roll * rollForce);
+        rigidBody.angularVelocity -= (roll * rollForce);
 
         //torque
 

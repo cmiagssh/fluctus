@@ -9,52 +9,35 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1089643985762416}
+  m_RootGameObject: {fileID: 1045013823100638}
   m_IsPrefabParent: 1
---- !u!1 &1089643985762416
+--- !u!1 &1045013823100638
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 4780520798668452}
-  - component: {fileID: 120383624025229162}
-  - component: {fileID: 114987167653838136}
+  - component: {fileID: 4530038780835840}
+  - component: {fileID: 120652311065844290}
+  - component: {fileID: 114328600873514424}
   m_Layer: 0
-  m_Name: WavePrefab
-  m_TagString: Untagged
+  m_Name: WaveP1Prefab
+  m_TagString: Wave
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1 &1399676022472982
+--- !u!1 &1575630383870140
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 4491705404465486}
-  - component: {fileID: 58294558538271720}
-  - component: {fileID: 114759747325115296}
-  m_Layer: 0
-  m_Name: innerCollider
-  m_TagString: WaveInnerCollider
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!1 &1941512258118096
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 4875344127950788}
-  - component: {fileID: 58411150658804278}
-  - component: {fileID: 114470202298741276}
+  - component: {fileID: 4504197677168032}
+  - component: {fileID: 58884456642539640}
+  - component: {fileID: 114304208334595552}
   m_Layer: 0
   m_Name: outerCollider
   m_TagString: WaveOuterCollider
@@ -62,53 +45,70 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4491705404465486
+--- !u!1 &1909127556348784
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4000144586235054}
+  - component: {fileID: 58527696926690856}
+  - component: {fileID: 114475307478799044}
+  m_Layer: 0
+  m_Name: innerCollider
+  m_TagString: WaveInnerCollider
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4000144586235054
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1399676022472982}
+  m_GameObject: {fileID: 1909127556348784}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 4780520798668452}
+  m_Father: {fileID: 4530038780835840}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &4780520798668452
+--- !u!4 &4504197677168032
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1089643985762416}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_GameObject: {fileID: 1575630383870140}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4530038780835840}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4530038780835840
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1045013823100638}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 4491705404465486}
-  - {fileID: 4875344127950788}
+  - {fileID: 4000144586235054}
+  - {fileID: 4504197677168032}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &4875344127950788
-Transform:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1941512258118096}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 4780520798668452}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!58 &58294558538271720
+--- !u!58 &58527696926690856
 CircleCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1399676022472982}
+  m_GameObject: {fileID: 1909127556348784}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -117,12 +117,12 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 1
---- !u!58 &58411150658804278
+--- !u!58 &58884456642539640
 CircleCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1941512258118096}
+  m_GameObject: {fileID: 1575630383870140}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -131,12 +131,12 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 1.1
---- !u!114 &114470202298741276
+--- !u!114 &114304208334595552
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1941512258118096}
+  m_GameObject: {fileID: 1575630383870140}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2dcecd594616e3a4c92aa0562658b693, type: 3}
@@ -144,25 +144,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   waveStartRadius: 1
   offset: -0.1
---- !u!114 &114759747325115296
+--- !u!114 &114328600873514424
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1399676022472982}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2dcecd594616e3a4c92aa0562658b693, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  waveStartRadius: 1
-  offset: 0.2
---- !u!114 &114987167653838136
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1089643985762416}
+  m_GameObject: {fileID: 1045013823100638}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 149a5d5dab667784aaf128edd32ec6fb, type: 3}
@@ -170,14 +157,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radius: 0
   width: 1
-  growthRatio: 0.01
+  growthRatio: 0.1
   playerGameobject: {fileID: 0}
---- !u!120 &120383624025229162
+--- !u!114 &114475307478799044
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1909127556348784}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2dcecd594616e3a4c92aa0562658b693, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waveStartRadius: 1
+  offset: 0.2
+--- !u!120 &120652311065844290
 LineRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1089643985762416}
+  m_GameObject: {fileID: 1045013823100638}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -185,7 +185,7 @@ LineRenderer:
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
   m_Materials:
-  - {fileID: 2100000, guid: 7d9cfd98928d08c489c89ddb312b3746, type: 2}
+  - {fileID: 2100000, guid: 4b1f6fe2ba8966f41bce8754decb5c76, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -222,10 +222,10 @@ LineRenderer:
     colorGradient:
       key0:
         serializedVersion: 2
-        rgba: 2365587455
+        rgba: 3112186836
       key1:
         serializedVersion: 2
-        rgba: 2365587455
+        rgba: 3112186836
       key2:
         serializedVersion: 2
         rgba: 0

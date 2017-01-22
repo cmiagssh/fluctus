@@ -1,0 +1,162 @@
+fileFormatVersion: 2
+guid: 16ef0b55cf8cf3147980a72d26112bd3
+timeCreated: 1485021177
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Enemy1DematerializeSprite_0
+    21300002: Enemy1DematerializeSprite_1
+    21300004: Enemy1DematerializeSprite_2
+    21300006: Enemy1DematerializeSprite_3
+    21300008: Enemy1DematerializeSprite_4
+    21300010: Enemy1DematerializeSprite_5
+    21300012: Enemy1DematerializeSprite_6
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  buildTargetSettings:
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -3
+    compressionQuality: 50
+    allowsAlphaSplitting: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Enemy1DematerializeSprite_0
+      rect:
+        serializedVersion: 2
+        x: 785
+        y: 1718
+        width: 82
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Enemy1DematerializeSprite_1
+      rect:
+        serializedVersion: 2
+        x: 2566
+        y: 47
+        width: 997
+        height: 1795
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Enemy1DematerializeSprite_2
+      rect:
+        serializedVersion: 2
+        x: 4564
+        y: 47
+        width: 997
+        height: 1801
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Enemy1DematerializeSprite_3
+      rect:
+        serializedVersion: 2
+        x: 6563
+        y: 47
+        width: 1001
+        height: 1801
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Enemy1DematerializeSprite_4
+      rect:
+        serializedVersion: 2
+        x: 8561
+        y: 47
+        width: 1002
+        height: 1801
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Enemy1DematerializeSprite_5
+      rect:
+        serializedVersion: 2
+        x: 10559
+        y: 47
+        width: 1002
+        height: 1801
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Enemy1DematerializeSprite_6
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 123
+        width: 923
+        height: 1877
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
