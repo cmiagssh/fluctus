@@ -10,6 +10,7 @@ public class PlayerControllerScript : MonoBehaviour {
     public GameObject wavePrefab;
     public string rollInput;
     public string thrustInput;
+    public string thrustPCInput;
     public string fireInput;
     public float thrust;
     public float mass;
@@ -37,7 +38,14 @@ public class PlayerControllerScript : MonoBehaviour {
     void FixedUpdate()
     {
         var roll = Input.GetAxis(rollInput);
-        thrust = Input.GetAxis(thrustInput);
+        if ((Input.GetAxis(thrustInput) == 1)||Input.GetButton(thrustPCInput))
+        {
+            //thrust = Input.GetAxis(thrustInput);
+            thrust = 1;
+        } else
+        {
+            thrust = 0;
+        }
         //Vector3 direction = new Vector3(x, y, 0).normalized;
         //transform.position += direction * speed * Time.deltaTime;
 

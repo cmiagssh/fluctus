@@ -216,6 +216,11 @@ Prefab:
       propertyPath: deathScreen
       value: 
       objectReference: {fileID: 1884292560}
+    - target: {fileID: 114333489624932728, guid: 72bf19c5e0090274194d95daaecf30ad,
+        type: 2}
+      propertyPath: thrustPCInput
+      value: P1ThrustPC
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 72bf19c5e0090274194d95daaecf30ad, type: 2}
   m_IsPrefabParent: 0
@@ -302,6 +307,15 @@ Prefab:
       propertyPath: deathScreen
       value: 
       objectReference: {fileID: 1884292560}
+    - target: {fileID: 114129527418588288, guid: d15d23a21620eef4e83e8067670f8b3e,
+        type: 2}
+      propertyPath: thrustPCInput
+      value: P1ThrustPC
+      objectReference: {fileID: 0}
+    - target: {fileID: 4333393241127674, guid: d15d23a21620eef4e83e8067670f8b3e, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d15d23a21620eef4e83e8067670f8b3e, type: 2}
   m_IsPrefabParent: 0
@@ -384,9 +398,10 @@ Transform:
   m_Children:
   - {fileID: 1835365166}
   - {fileID: 1814221577}
+  - {fileID: 1188556703}
   - {fileID: 1128135890}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &358267402
 MonoBehaviour:
@@ -636,6 +651,11 @@ Prefab:
       propertyPath: deathScreen
       value: 
       objectReference: {fileID: 1884292560}
+    - target: {fileID: 114101902920344944, guid: e3a556a0523fd574b9ea5f059dc6f67e,
+        type: 2}
+      propertyPath: thrustPCInput
+      value: P2ThrustPC
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e3a556a0523fd574b9ea5f059dc6f67e, type: 2}
   m_IsPrefabParent: 0
@@ -738,6 +758,11 @@ Prefab:
       propertyPath: deathScreen
       value: 
       objectReference: {fileID: 1884292560}
+    - target: {fileID: 114987381658531904, guid: 9b7424b567cd0c044bb90893ab257b1f,
+        type: 2}
+      propertyPath: thrustPCInput
+      value: P1ThrustPC
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9b7424b567cd0c044bb90893ab257b1f, type: 2}
   m_IsPrefabParent: 0
@@ -841,6 +866,11 @@ Prefab:
       propertyPath: deathScreen
       value: 
       objectReference: {fileID: 1884292560}
+    - target: {fileID: 114568991011571740, guid: 8832eb809da5d834fbc38cda5a7f4e56,
+        type: 2}
+      propertyPath: thrustPCInput
+      value: P2ThrustPC
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8832eb809da5d834fbc38cda5a7f4e56, type: 2}
   m_IsPrefabParent: 0
@@ -888,6 +918,11 @@ Prefab:
       propertyPath: deathScreen
       value: 
       objectReference: {fileID: 1884292560}
+    - target: {fileID: 114096906877080916, guid: f1716fbc4e4b4024cbc6278c07a3c118,
+        type: 2}
+      propertyPath: thrustPCInput
+      value: P2ThrustPC
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f1716fbc4e4b4024cbc6278c07a3c118, type: 2}
   m_IsPrefabParent: 0
@@ -1026,6 +1061,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1128135890}
   - component: {fileID: 1128135889}
+  - component: {fileID: 1128135892}
+  - component: {fileID: 1128135891}
   m_Layer: 0
   m_Name: BackgroundGalaxySprite
   m_TagString: Untagged
@@ -1068,8 +1105,8 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
---- !u!4 &1128135890
-Transform:
+--- !u!224 &1128135890
+RectTransform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
@@ -1079,8 +1116,45 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 358267401}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 19.2, y: 10.8}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1128135891
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1128135888}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -98529514, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Texture: {fileID: 15200000, guid: 7a76c2f0efc318e43b55a7f68981c1d5, type: 3}
+  m_UVRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+--- !u!222 &1128135892
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1128135888}
 --- !u!1001 &1130088281
 Prefab:
   m_ObjectHideFlags: 0
@@ -1270,6 +1344,89 @@ Transform:
   m_Father: {fileID: 389744806}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1188556702
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1188556703}
+  - component: {fileID: 1188556708}
+  - component: {fileID: 1188556707}
+  - component: {fileID: 1188556706}
+  m_Layer: 5
+  m_Name: Plane
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1188556703
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1188556702}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 396.9, y: 223.2, z: 10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 358267401}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!23 &1188556706
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1188556702}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+--- !u!64 &1188556707
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1188556702}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!33 &1188556708
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1188556702}
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1237850685
 GameObject:
   m_ObjectHideFlags: 0
@@ -1674,6 +1831,11 @@ Prefab:
       propertyPath: deathScreen
       value: 
       objectReference: {fileID: 1884292560}
+    - target: {fileID: 114919349892782616, guid: 0fc755d15a82b2f408a39b1c95693df0,
+        type: 2}
+      propertyPath: thrustPCInput
+      value: P1ThrustPC
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0fc755d15a82b2f408a39b1c95693df0, type: 2}
   m_IsPrefabParent: 0
@@ -1857,7 +2019,7 @@ RectTransform:
   - {fileID: 1884292559}
   - {fileID: 1130088282}
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -2249,6 +2411,11 @@ Prefab:
       propertyPath: deathScreen
       value: 
       objectReference: {fileID: 1884292560}
+    - target: {fileID: 114729419106258884, guid: d185c1496552bd24eb8d76aa634bc00a,
+        type: 2}
+      propertyPath: thrustPCInput
+      value: P2ThrustPC
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d185c1496552bd24eb8d76aa634bc00a, type: 2}
   m_IsPrefabParent: 0

@@ -304,6 +304,11 @@ Prefab:
       propertyPath: deathScreen
       value: 
       objectReference: {fileID: 1884292560}
+    - target: {fileID: 114333489624932728, guid: 72bf19c5e0090274194d95daaecf30ad,
+        type: 2}
+      propertyPath: thrustPCInput
+      value: P1ThrustPC
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 72bf19c5e0090274194d95daaecf30ad, type: 2}
   m_IsPrefabParent: 0
@@ -608,6 +613,11 @@ Prefab:
       propertyPath: deathScreen
       value: 
       objectReference: {fileID: 1884292560}
+    - target: {fileID: 114129527418588288, guid: d15d23a21620eef4e83e8067670f8b3e,
+        type: 2}
+      propertyPath: thrustPCInput
+      value: P1ThrustPC
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d15d23a21620eef4e83e8067670f8b3e, type: 2}
   m_IsPrefabParent: 0
@@ -1010,6 +1020,11 @@ Prefab:
       propertyPath: deathScreen
       value: 
       objectReference: {fileID: 1884292560}
+    - target: {fileID: 114101902920344944, guid: e3a556a0523fd574b9ea5f059dc6f67e,
+        type: 2}
+      propertyPath: thrustPCInput
+      value: P2ThrustPC
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e3a556a0523fd574b9ea5f059dc6f67e, type: 2}
   m_IsPrefabParent: 0
@@ -1225,6 +1240,11 @@ Prefab:
       propertyPath: deathScreen
       value: 
       objectReference: {fileID: 1884292560}
+    - target: {fileID: 114987381658531904, guid: 9b7424b567cd0c044bb90893ab257b1f,
+        type: 2}
+      propertyPath: thrustPCInput
+      value: P1ThrustPC
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9b7424b567cd0c044bb90893ab257b1f, type: 2}
   m_IsPrefabParent: 0
@@ -1356,6 +1376,11 @@ Prefab:
       propertyPath: deathScreen
       value: 
       objectReference: {fileID: 1884292560}
+    - target: {fileID: 114568991011571740, guid: 8832eb809da5d834fbc38cda5a7f4e56,
+        type: 2}
+      propertyPath: thrustPCInput
+      value: P2ThrustPC
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8832eb809da5d834fbc38cda5a7f4e56, type: 2}
   m_IsPrefabParent: 0
@@ -1527,6 +1552,11 @@ Prefab:
       propertyPath: deathScreen
       value: 
       objectReference: {fileID: 1884292560}
+    - target: {fileID: 114096906877080916, guid: f1716fbc4e4b4024cbc6278c07a3c118,
+        type: 2}
+      propertyPath: thrustPCInput
+      value: P2ThrustPC
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f1716fbc4e4b4024cbc6278c07a3c118, type: 2}
   m_IsPrefabParent: 0
@@ -2362,6 +2392,11 @@ Prefab:
       propertyPath: deathScreen
       value: 
       objectReference: {fileID: 1884292560}
+    - target: {fileID: 114919349892782616, guid: 0fc755d15a82b2f408a39b1c95693df0,
+        type: 2}
+      propertyPath: thrustPCInput
+      value: P1ThrustPC
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0fc755d15a82b2f408a39b1c95693df0, type: 2}
   m_IsPrefabParent: 0
@@ -2912,6 +2947,11 @@ Prefab:
       propertyPath: deathScreen
       value: 
       objectReference: {fileID: 1884292560}
+    - target: {fileID: 114729419106258884, guid: d185c1496552bd24eb8d76aa634bc00a,
+        type: 2}
+      propertyPath: thrustPCInput
+      value: P2ThrustPC
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d185c1496552bd24eb8d76aa634bc00a, type: 2}
   m_IsPrefabParent: 0
