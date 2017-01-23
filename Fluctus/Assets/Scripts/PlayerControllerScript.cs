@@ -35,7 +35,7 @@ public class PlayerControllerScript : MonoBehaviour {
 	}
 
     // Update is called once per frame
-    void FixedUpdate()
+    void Update()
     {
         var roll = Input.GetAxis(rollInput);
         if ((Input.GetAxis(thrustInput) == 1)||Input.GetButton(thrustPCInput))
